@@ -25,22 +25,59 @@ html(lang="es")
   h2#intro Introducción
 
   p.
-    #[span.m Oportunistas e inescrupulosos], trabajan todos en la misma organización,
+    #[span.l Oportunistas e inescrupulosos] trabajan todos en la misma organización,
     no comparten lo que saben, se cayan, se mienten y son irresponsables. 
-    Entre todos tienen que definir la conclusión de un #[span.m informe].
-    Lo que les importa no es la precisión del resultado; lo que quieren es salvarse y 
-    que nadie los descubra. 
+    Les han encomendado la preparación de un #[span.m informe] 
+    sobre algún resultado económico de la organización.
+    Pero a ellos no les importa no es la precisión del informe; 
+    lo que quieren es dar buenas noticias, aunque haya que exagerar un poco.
+    Y se van a cuidar como sea para que nadie los descubra. 
     
   p.
-    Cada uno necesita mejorar la conclusión, pero en algún momento la exageración será insostenible. 
-    Al final un mentiroso o un traidor se habrá descubierto y perderá su credibilida 
-    hasta ser echado de la organización. Así hasta que quede un ganador. 
+    Cada jugador va a ir mejorando el #[span.m informe] dando un resultado más alto, 
+    pero en algún momento la exageración será insostenible. 
+    En ese momento un mentiroso o un traidor se habrá descubierto y perderá su credibilidad.
+    Los que pierdan toda su credibilidad serán echados de la organización. 
+
+  h2#mecanica Mecánica del juego
+
+  p. 
+    Se reparten 4 cartas a cada jugador. Esa es la información que cada jugador conoce
+    (y que no va a compartir con el resto). 
+
+  p. 
+    El jugador que es #[span.m mano] es el que declara el primer #[span.m informe].
+    por ejemplo dice #[span.m hay 4 oros]. Eso significa que él calcula que entre 
+    las cartas qué el tiene y las que tienen los demás habrá 4 cartas de oros ó más. 
+
+  p. 
+    El jugador a su derecha puede acusar a su predecedor de mentiroso diciendo #[span.m ¡miente!].
+    O puede declarar un #[span.m informe] mayor, por ejemplo #[span.m hay 6 oros].
+
+  p. 
+    Así cada jugador sigue tiene las mismas dos opciones, desconfiar del anterior o aumentar.
+    El palo se puede cambiar todas las veces que se quiera y el número siempre tiene que crecer.
+    Por ejemplo puede decir #[span.m hay 7 copas].
 
   p.
-    El #[span.m informe] indica cuántas cartas hay, al menos, de cierto palo en las manos de los jugadores. 
-    #[span.m 4 oros] significa que en las manos de todos los jugadores hay 4 cartas de oro o más. 
-    A su turno cada jugador emitirá un informe mejor: #[span.m 5 oros], #[span.m 7 espadas], #[span.m 8 oros],
-    #[span.m ¡miente!].
+    Cuando un jugador acusa #[span.m ¡miente!] la mano se termina, todos los jugadores muestran 
+    sus cartas y se verifica si el informe es cierto (si hay 7 copas o más, en el ejemplo) 
+    o si es exagerado (si no hay 7 copas, si hay menos). 
+    El que acusa pierde credibilidad si el informe era cierto. 
+    Si no era cierto el que pierde credibilidad es el que dijo #[span.m hay 7 copas].
+
+  p.
+    Se empieza una nueva mano pero ahora el jugador que perdió recibirá una carta menos. 
+
+  p. 
+    La credibilidad nunca se recupera. En cada mano cada jugador recibe la misma cantidad 
+    de cartas que la mano anterior o menos (si perdió). 
+
+  p.
+    El que se queda sin credibilidad sale del partido.
+
+  p.
+    Gana cuando queda un solo jugador. 
 
   h2#preparacion Preparación
 
@@ -53,49 +90,10 @@ html(lang="es")
     Se recomienda repartir 4 cartas a cada jugador. 
     #[small (si juegan 4 jugadores o menos se puede empezar con 5 para hacer el juego más largo, si juegan 7 ó más conviene empezar con 3 porque si no se hace muy largo)]
 
-  p.
-    Las manos subsiguientes los jugadores irán individualmente perdiendo credibilidad
-    (cuando son descubiertos mintiendo o cuando acusaron injustamente a otro) y 
-    recibirán una carta menos en las rondas subsiguientes. 
-
   h2#las-cartas Las cartas
 
   p.
     Solo importan los palos. Los números no importan. Los comodines (si hay) no corresponden a ningún palo.
-
-  h2#mecanica Mecánica del juego
-
-  p.
-    Se reparten las cartas a cada jugador de acuerdo a su credibilidad
-    (4 en la primera mano o la cantidad con la que se haya acordado empezar).
-
-  p.
-    El que es mano da un #[span.m informe] diciendo en voz alta un número y un palo. 
-    Por ejemplo #[span.m 4 oros]
-
-  p.
-    El que está a su lado tiene dos opciones, gritar #[span.m ¡miente!] 
-    o dice su #[span.m informe], que puede ser o no del mismo palo pero cuyo número debe ser mayor.
-    Por ejemplo #[span.m 6 copas]. 
-
-  p.
-    La mano termina cuando un jugador dice #[span.m ¡miente!]. Todos los jugadores muestran sus cartas.
-    Si había tantas cartas (o más) del palo informado el que dijo #[span.m ¡miente!] pierde credibilidad.
-    Si había menos cartas de ese palo, el que informó exageró y por eso pierde credibilidad. 
-    El jugador que perdió credibilidad recibirá una carta menos que en la mano anterior, 
-    en todas las manos desde ahí. 
-
-  p.
-    El que está a la derecha del que fue mano será el nuevo mano, 
-    y el que está a su izqueirda reparte las cartas nuevamente respetando la credibilidad de cada uno.
-
-  p.
-    La credibilidad se pierde pero no se recupera una vez que un jugador empieza a recibir 3 cartas
-    no se le vuelven a repartir 4. Si vuelve a perder recibirá 2 y luego 1. 
-
-  p.
-    El jugador que pierde credibilidad se va del juego. 
-
 
   h2#fin Fin del juego
 
@@ -111,13 +109,29 @@ html(lang="es")
 
   h2#faq Preguntas frecuentes
 
-  p.q#q-antescedentes ¿El juego está testeado? ¿es entretenido? ¿cuáles son sus antecedentes?
+  p.q#q-el-mano ¿Quién empieza? ¿para qué lado se reparte?
 
   p.a.
-    El juego está basado en un juego con datos que se llama "Blef". 
-    Lo juegan en el barco pirata en la película Piratas del Caribe II. 
-    El juego está testeado, es dinámico y fácil de aprender. 
+    Se sortea el que reparte, ese da cartas empezando con el de su derecha que será el mano.
+    El jugador que es mano es el primero en dar el informe. 
+    En la siguiente mano pasa a ser mano el que está a la derecha del que fue antes.
 
+  p.q#q-la-mano-el-mano Me confundí ¿la mano y el mano son cosas distintas?
+
+  p.a.
+    Sí, en todos los juegos de cartas se habla de la mano a una parte del juego 
+    empieza repartiendo cartas y, que en este caso termina cuando alguien desconfía. 
+    Se llama el mano al jugador que en una mano es el primero en jugar 
+    (en este juego dar su informe).
+  
+  p.q#q-pasa-la-mano ¿Qué pasa si el que le toca dar pierde? ¿quién da?
+
+  p.a.
+    Si el que le hubiera tocado dar pierde y sale del juego 
+    (porque ya no le quedan cartas para recibir), vuelve a reparitir 
+    el jugador que repartió la mano anterior. Esto es así para no saltear 
+    al jugador que le tocaría ser mano. 
+  
   p.q#q-sumar ¿Hay que ir subiendo de a uno o se puede subir de a más?
 
   p.a.
@@ -145,5 +159,12 @@ html(lang="es")
   p.a.
     Mirar las cartas también sirve, no solo es la credibilidad sino también la información 
     de qué hay. 
+
+  p.q#q-antescedentes ¿El juego está testeado? ¿es entretenido? ¿cuáles son sus antecedentes?
+
+  p.a.
+    El juego está basado en un juego con datos que se llama "Blef". 
+    Lo juegan en el barco pirata en la película Piratas del Caribe II. 
+    El juego está testeado, es dinámico y fácil de aprender. 
 
   h1#end ⧟
