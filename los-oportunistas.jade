@@ -59,7 +59,7 @@ html(lang="es")
       li decir #[span.m ¡miente!].
   
     p.
-      Cuando un jugador acusa #[span.m ¡miente!] la mano se termina, todos los jugadores muestran 
+      Cuando un jugador acusa #[span.m ¡miente!] la ronda se termina, todos los jugadores muestran 
       sus cartas y se verifica la veracidad de lo dicho por el último jugador.
       O sea, si entre todos los jugadores la cantidad de cartas del palo dicho es mayor o igual, pierde el que acusó. 
       Si la cantidad de cartas es menor de lo dicho, pierdo el otro por mentiroso.
@@ -68,8 +68,8 @@ html(lang="es")
       Se empieza una nueva ronda. El jugador que perdió recibirá una carta menos. 
   
     p. 
-      La credibilidad nunca se recupera. En cada mano cada jugador recibe la misma cantidad 
-      de cartas que la mano anterior o una menos si acaba de perder. 
+      La credibilidad nunca se recupera. En cada ronda cada jugador recibe la misma cantidad 
+      de cartas que la ronda anterior o una menos si acaba de perder. 
   
     p.
       El que se queda sin credibilidad sale del partido.
@@ -118,28 +118,19 @@ html(lang="es")
       también puede decir #[span.m ¡desconfío!] o #[span.m a ver] en vez de acusar #[span.m ¡miente!].
       También tirar las cartas boca arriba sobre la mesa equivalen a acusar.    
   
-    p.q#q-el-mano ¿Quién empieza? ¿para qué lado se reparte?
+    p.q#q-el-primero ¿Quién empieza? ¿para qué lado se reparte?
   
     p.a.
-      Se sortea el que reparte, ese da cartas empezando con el de su derecha que será el mano.
-      El jugador que es mano es el primero en dar el informe. 
-      En la siguiente mano pasa a ser mano el que está a la derecha del que fue antes.
-  
-    p.q#q-la-mano-el-mano Me confundí ¿la mano y el mano son cosas distintas?
-  
-    p.a.
-      Sí, en todos los juegos de cartas se habla de la mano a una parte del juego 
-      empieza repartiendo cartas y, que en este caso termina cuando alguien desconfía. 
-      Se llama el mano al jugador que en una mano es el primero en jugar 
-      (en este juego dar su informe).
+      Se sortea quién será el jugador que va a empezar (el primero que tiene que hablar).
+      El que está a su izquierda reparte las cartas empezando con el de su derecha (el primero).
+      En la siguiente ronda empieza el que estaba a la derecha del que empezó en la anterior.
     
-    p.q#q-pasa-la-mano ¿Qué pasa si el que le toca dar pierde? ¿quién da?
+    p.q#q-reparte-2-veces ¿Qué pasa si el que le toca dar pierde? ¿quién da?
   
     p.a.
-      Si el que le hubiera tocado dar pierde y sale del juego 
-      (porque ya no le quedan cartas para recibir), vuelve a repartir 
-      el jugador que repartió la mano anterior. Esto es así para no saltear 
-      al jugador que le tocaría ser mano. 
+      No se reparte por turnos. Lo que tiene turnos es ser el primero de la ronda.
+      Entonces a veces pasa que un jugador tiene que repartir dos veces. 
+      Esto ocurre cuando el que era primero tenía una sola carta y pierde.
     
     p.q#q-sumar ¿Hay que ir subiendo de a uno o se puede subir de a más?
   
@@ -177,15 +168,20 @@ html(lang="es")
     p.q#q-desconfio ¿Se parece este juego al desconfío?
   
     p.a.
-      Solo un poco. En que la mano se termina con #[span ¡desconfío!]
+      Solo un poco. En que la ronda se termina con #[span.m ¡desconfío!].
+      La diferencia más importante es que en el desconfío, lo actuado antes no vale nada;
+      solo importa la última carta que se tiró, es o no es del palo esperado. 
+      En #[span.l los oportunistas] hay más para deducir, hay que tener en cuenta
+      cuál es la probabilidad pura (en función de las cartas que no se ve) 
+      y las posibilidades y conveniencias según lo que cada jugador haya declarado.
   
     p.q#q-estrategia ¿Hay una estrategia invencible?
   
     p.a.
-      No. El que es mano (el que habla primero) es el que tiene más poder.
+      No. El que empieza es el que tiene más poder.
       Puede contar cuántas cartas hay en las manos de todos (imaginemos 16). 
       Hay en promedio 4 de cada palo. Podría haber 3 ó 5, o con menos probabilidad 2 ó 6
-      y todavía menos probable 1 ó 7. Si arranca diciendo #[span 2 oros] y 
+      y todavía menos probable 1 ó 7. Si arranca diciendo #[span.m 2 oros] y 
       cada uno aumenta un oro el de su derecha dice 3 oros, el de enfrente 4 oros y 
       el de la izquierda dice 5 oros. Él ahora debe decir 6 oros o acusar al de la izquierda 
       de que no hay 5 oros; desconfiar parece muy riesgoso porque podría haber,
@@ -196,4 +192,13 @@ html(lang="es")
       Mirar las cartas también sirve, no solo es la credibilidad sino también la información 
       de qué hay. 
   
+    p.q#q-mano ¿Qué significa mano?
+  
+    p.a.
+      En esta descripción del juego hablamos de cartas en la #[span.m mano], de las que tienen los jugadores
+      en determinado momento. Usamos ronda en vez de #[a.m(href="https://dle.rae.es/mano#MHzj6JU", title="Según la RAE: Lance entero de algunos juegos.") mano]
+      cuando hablamos de las partes del juego entre que se reparte y se define el perdedor. 
+      Y decimos el primero en vez de #[a.m(href="https://dle.rae.es/mano#MHzzsYN", title="Según la RAE: En ciertos juegos, persona a quien en cada momento le corresponde jugar en primer lugar.") mano] 
+      para referirnos al jugador que empieza cada ronda.
+
     h1#end ⧟
